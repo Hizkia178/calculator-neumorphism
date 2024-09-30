@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neumorphism Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="display" id="display"></div>
+        <div class="buttons">
+            <button class="btn" onclick="clearDisplay()">
+                <i class="fas fa-trash-alt"></i>
+            </button>
+            <button class="btn" onclick="deleteLast()">
+                <i class="fas fa-backspace"></i>
+            </button>
+            <button class="btn" onclick="insert('/')">
+                <i class="fas fa-divide"></i>
+            </button>
+            <button class="btn" onclick="insert('*')">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <button class="btn" onclick="insert('7')">7</button>
+            <button class="btn" onclick="insert('8')">8</button>
+            <button class="btn" onclick="insert('9')">9</button>
+            <button class="btn" onclick="insert('-')">
+                <i class="fas fa-minus"></i>
+            </button>
+
+            <button class="btn" onclick="insert('4')">4</button>
+            <button class="btn" onclick="insert('5')">5</button>
+            <button class="btn" onclick="insert('6')">6</button>
+            <button class="btn" onclick="insert('+')">
+                <i class="fas fa-plus"></i>
+            </button>
+
+            <button class="btn" onclick="insert('1')">1</button>
+            <button class="btn" onclick="insert('2')">2</button>
+            <button class="btn" onclick="insert('3')">3</button>
+            <button class="btn equals" onclick="calculate()">=</button>
+
+            <button class="btn zero" onclick="insert('0')">0</button>
+            <button class="btn" onclick="insert('.')">
+                <i class="fas fa-circle"></i>
+            </button>
+            <button class='btn' onclick="insert('check')">
+                <i class='fas fa-check'></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
